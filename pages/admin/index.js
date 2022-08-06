@@ -1,61 +1,61 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import "primereact/resources/themes/lara-light-indigo/theme.css";
-import "primereact/resources/primereact.min.css";
-import "primeicons/primeicons.css";
-import { FileUpload } from "primereact/fileupload";
-import { useState } from "react";
-import { Dropdown } from "primereact/dropdown";
-import { InputText } from "primereact/inputtext";
+import Head from 'next/head'
+import styles from '../styles/Home.module.css'
+import 'primereact/resources/themes/lara-light-indigo/theme.css'
+import 'primereact/resources/primereact.min.css'
+import 'primeicons/primeicons.css'
+import { FileUpload } from 'primereact/fileupload'
+import { useState } from 'react'
+import { Dropdown } from 'primereact/dropdown'
+import { InputText } from 'primereact/inputtext'
 
 export default function Admin() {
     const collegeSelectItems = [
-        { label: "DTU", value: "DTU" },
-        { label: "NSUT", value: "NSUT" },
-        { label: "IGDTUW", value: "IGDTUW" },
-    ];
+        { label: 'DTU', value: 'DTU' },
+        { label: 'NSUT', value: 'NSUT' },
+        { label: 'IGDTUW', value: 'IGDTUW' },
+    ]
 
     const yearSelectItems = [
-        { label: "First", value: "first" },
-        { label: "Second", value: "second" },
-    ];
+        { label: 'First', value: 'first' },
+        { label: 'Second', value: 'second' },
+    ]
 
     const subjectSelectItems = [
-        { label: "Maths", value: "maths" },
-        { label: "Physics", value: "physics" },
-        { label: "Chemistry", value: "chemistry" },
-        { label: "Computer", value: "computer" },
-    ];
+        { label: 'Maths', value: 'maths' },
+        { label: 'Physics', value: 'physics' },
+        { label: 'Chemistry', value: 'chemistry' },
+        { label: 'Computer', value: 'computer' },
+    ]
 
     const topicSelectItems = [
-        { label: "Book", value: "book" },
-        { label: "Assignment", value: "assignment" },
-        { label: "Paper", value: "paper" },
-        { label: "Playlist", value: "playlist" },
-        { label: "Experiment", value: "experiment" },
-        { label: "Notes", value: "notes" },
-    ];
+        { label: 'Book', value: 'book' },
+        { label: 'Assignment', value: 'assignment' },
+        { label: 'Paper', value: 'paper' },
+        { label: 'Playlist', value: 'playlist' },
+        { label: 'Experiment', value: 'experiment' },
+        { label: 'Notes', value: 'notes' },
+    ]
 
     const [formData, setFormData] = useState({
         college: collegeSelectItems[0],
         year: yearSelectItems[0],
         subject: subjectSelectItems[0],
         topic: topicSelectItems[0],
-        name: "",
-    });
+        name: '',
+    })
 
     const uploadHandler = async (file) => {
-        let data = new FormData();
-        data.append("file", file);
+        let data = new FormData()
+        data.append('file', file)
 
-        const response = await fetch("/api/upload", {
-            method: "POST",
+        const response = await fetch('/api/upload', {
+            method: 'POST',
             body: {
                 data,
                 formData,
             },
-        });
-    };
+        })
+    }
 
     return (
         <div className={styles.container}>
@@ -72,7 +72,7 @@ export default function Admin() {
                 options={collegeSelectItems}
                 onChange={(e) =>
                     setFormData((prev) => {
-                        return { ...prev, college: e.value };
+                        return { ...prev, college: e.value }
                     })
                 }
                 placeholder="Select a College"
@@ -82,7 +82,7 @@ export default function Admin() {
                 options={yearSelectItems}
                 onChange={(e) =>
                     setFormData((prev) => {
-                        return { ...prev, year: e.value };
+                        return { ...prev, year: e.value }
                     })
                 }
                 placeholder="Select a Year"
@@ -92,7 +92,7 @@ export default function Admin() {
                 options={subjectSelectItems}
                 onChange={(e) =>
                     setFormData((prev) => {
-                        return { ...prev, subject: e.value };
+                        return { ...prev, subject: e.value }
                     })
                 }
                 placeholder="Select a Subject"
@@ -102,7 +102,7 @@ export default function Admin() {
                 options={topicSelectItems}
                 onChange={(e) =>
                     setFormData((prev) => {
-                        return { ...prev, topic: e.value };
+                        return { ...prev, topic: e.value }
                     })
                 }
                 placeholder="Select a Topic"
@@ -111,12 +111,12 @@ export default function Admin() {
                 value={formData.name}
                 onChange={(e) =>
                     setFormData((prev) => {
-                        return { ...prev, name: e.target.value };
+                        return { ...prev, name: e.target.value }
                     })
                 }
             />
 
             <FileUpload name="demo" url="/api/upload" />
         </div>
-    );
+    )
 }
