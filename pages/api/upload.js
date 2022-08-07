@@ -28,7 +28,7 @@ export default async function handler(req, res) {
             const data = s3Client.putObject(
                 {
                     Bucket: process.env.DO_SPACES_BUCKET,
-                    Key: files.demo.originalFilename,
+                    Key: 'terimummymerihoja/' + files.demo.originalFilename,
                     ContentType: 'application/pdf',
                     Body: fs.createReadStream(files.demo.filepath),
                     ACL: 'public-read',

@@ -12,9 +12,12 @@
     },
     "dependencies": {
         "@prisma/client": "^4.0.0",
+        "@react-pdf-viewer/core": "3.6.0",
+        "@react-pdf-viewer/default-layout": "^3.6.0",
         "aws-sdk": "^2.1169.0",
         "formidable": "^2.0.1",
         "next": "12.2.0",
+        "pdfjs-dist": "2.14.305",
         "primeicons": "^5.0.0",
         "primereact": "^8.2.0",
         "react": "18.2.0",
