@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import 'primereact/resources/themes/lara-light-indigo/theme.css'
 import 'primereact/resources/primereact.min.css'
 import 'primeicons/primeicons.css'
@@ -58,7 +57,7 @@ export default function Admin() {
     }
 
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
                 <title>Movie Titles</title>
                 <meta
