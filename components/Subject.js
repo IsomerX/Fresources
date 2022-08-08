@@ -93,51 +93,51 @@ function Subject() {
                 </button>
             </div>
             <div className="container text-center mw-80" >
-                <div className={`py-2 my-2 w-100 border ${notes ? "shadow-sm" : "d-none"}`}>
+                <div className={`py-2 my-2 w-100 border ${notes ? "shadow-sm" : "hidden"}`}>
                     <h3>notes -1</h3>
 
                 </div>
-                <div className={`py-2 my-2 w-100 border ${notes ? "shadow-sm" : "d-none"}`}>
+                <div className={`py-2 my-2 w-100 border ${notes ? "shadow-sm" : "hidden"}`}>
                     <h3>notes-2</h3>
 
                 </div>
-                <div className={` py-2 my-2 w-100 border ${assig ? "shadow-sm" : "d-none"}`}>
+                <div className={` py-2 my-2 w-100 border ${assig ? "shadow-sm" : "hidden"}`}>
                     <h3>assig -1</h3>
 
                 </div>
-                <div className={`py-2 my-2 w-100 border  ${assig ? "shadow-sm" : "d-none"}`}>
+                <div className={`py-2 my-2 w-100 border  ${assig ? "shadow-sm" : "hidden"}`}>
                     <h3>assig -2</h3>
 
                 </div>
-                <div className={`py-2 my-2 w-100 border  ${book ? "shadow-sm" : "d-none"}`}>
+                <div className={`py-2 my-2 w-100 border  ${book ? "shadow-sm" : "hidden"}`}>
                     <h3>book-1</h3>
 
                 </div>
-                <div className={`py-2 my-2 w-100 border  ${book ? "shadow-sm" : "d-none"}`}>
+                <div className={`py-2 my-2 w-100 border  ${book ? "shadow-sm" : "hidden"}`}>
                     <h3>book-2</h3>
 
                 </div>
-                <div className={` py-2 my-2 w-100 border ${exp ? "shadow-sm" : "d-none"}`}>
+                <div className={` py-2 my-2 w-100 border ${exp ? "shadow-sm" : "hidden"}`}>
                     <h3>exp-1</h3>
 
                 </div>
-                <div className={`py-2 my-2 w-100 border  ${exp ? "shadow-sm" : "d-none"}`}>
+                <div className={`py-2 my-2 w-100 border  ${exp ? "shadow-sm" : "hidden"}`}>
                     <h3>exp-2</h3>
 
                 </div>
-                <div className={`py-2 my-2 w-100 border  ${pyq ? "shadow-sm" : "d-none"}`}>
+                <div className={`py-2 my-2 w-100 border  ${pyq ? "shadow-sm" : "hidden"}`}>
                     <h3>pyq-1</h3>
 
                 </div>
-                <div className={`py-2 my-2 w-100 border  ${pyq ? "shadow-sm" : "d-none"}`}>
+                <div className={`py-2 my-2 w-100 border  ${pyq ? "shadow-sm" : "hidden"}`}>
                     <h3>pyq-2</h3>
 
                 </div>
-                <div className={`py-2 my-2 w-100 border  ${play ? "shadow-sm" : "d-none"}`}>
+                <div className={`py-2 my-2 w-100 border  ${play ? "shadow-sm" : "hidden"}`}>
                     <h3>play-1</h3>
 
                 </div>
-                <div className={` py-2 my-2 w-100 border ${play ? "shadow-sm" : "d-none"}`}>
+                <div className={` py-2 my-2 w-100 border ${play ? "shadow-sm" : "hidden"}`}>
                     <h3>play-2</h3>
 
                 </div>
