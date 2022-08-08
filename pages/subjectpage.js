@@ -10,9 +10,8 @@ function Subject() {
         book: false,
         pyq: false,
         exp: false,
-        play: false
+        play: false,
     })
-
 
     const Assignment = () => {
         setUserInput({
@@ -22,7 +21,7 @@ function Subject() {
             book: false,
             pyq: false,
             exp: false,
-            play: false
+            play: false,
         })
     }
     const Note = () => {
@@ -33,7 +32,7 @@ function Subject() {
             book: false,
             pyq: false,
             exp: false,
-            play: false
+            play: false,
         })
     }
     const Book = () => {
@@ -44,7 +43,7 @@ function Subject() {
             book: true,
             pyq: false,
             exp: false,
-            play: false
+            play: false,
         })
     }
     const Pyq = () => {
@@ -55,7 +54,7 @@ function Subject() {
             book: false,
             pyq: true,
             exp: false,
-            play: false
+            play: false,
         })
     }
     const Experiment = () => {
@@ -66,7 +65,7 @@ function Subject() {
             book: false,
             pyq: false,
             exp: true,
-            play: false
+            play: false,
         })
     }
     const Playlist = () => {
@@ -77,7 +76,7 @@ function Subject() {
             book: false,
             pyq: false,
             exp: false,
-            play: true
+            play: true,
         })
     }
     const All = () => {
@@ -88,7 +87,7 @@ function Subject() {
             book: true,
             pyq: true,
             exp: true,
-            play: true
+            play: true,
         })
     }
 
