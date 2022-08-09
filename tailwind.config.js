@@ -7,6 +7,7 @@ module.exports = {
         extend: {
             colors: {
                 bablu: '#020221',
+                babla: "#0e0e12",
                 primary: {
                     bablu: '#101033',
 
