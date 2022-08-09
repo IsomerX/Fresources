@@ -13,8 +13,7 @@ const RatingPageButton = () => {
                 active: false,
                 counter: isLiked.counter - 1,
             })
-        }
-        else {
+        } else {
             setIsLiked({
                 active: true,
                 counter: isLiked.counter + 1,
@@ -23,10 +22,11 @@ const RatingPageButton = () => {
     }
     return (
         <button
-            className={`${isLiked.active
+            className={`${
+                isLiked.active
                     ? 'rounded-md bg-blue-200 px-4 text-center hover:bg-blue-400'
                     : 'rounded-md bg-gray-200 px-4 text-center hover:bg-gray-400'
-                }`}
+            }`}
             onClick={changeHandler}
         >
             {`upvotes: ${isLiked.counter}`}

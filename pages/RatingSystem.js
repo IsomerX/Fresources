@@ -11,9 +11,7 @@ const RatingSystem = () => {
                 className='border shadow-lg rounded-xl bg-purple-400'
                 key={subject}
             >
-                <div
-                    className='flex justify-center items-center text-center text-xl'
-                >
+                <div className='flex justify-center items-center text-center text-xl'>
                     {subject}
                 </div>
                 <div className='flex flex-col items-center bg-purple-200 p-2 divide-y divide-slate-600 justify-center px-4'>
@@ -25,7 +23,7 @@ const RatingSystem = () => {
                             >
                                 <div className='text-center'>{note}</div>
                                 <div className='text-center'>
-                                    { }
+                                    {}
                                     <RatingPageButton />
                                 </div>
                             </div>
