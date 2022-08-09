@@ -8,12 +8,11 @@ const RatingSystem = () => {
     const subjectCard = Object.keys(topic).map((subject, index) => {
         return (
             <div
-                className=' w-100 border shadow-lg rounded-xl bg-purple-400'
+                className='border shadow-lg rounded-xl bg-purple-400'
                 key={subject}
             >
                 <div
                     className='flex justify-center items-center text-center text-xl'
-                    key={subject + index}
                 >
                     {subject}
                 </div>
@@ -26,7 +25,7 @@ const RatingSystem = () => {
                             >
                                 <div className='text-center'>{note}</div>
                                 <div className='text-center'>
-                                    {}
+                                    { }
                                     <RatingPageButton />
                                 </div>
                             </div>
@@ -37,10 +36,11 @@ const RatingSystem = () => {
         )
     })
     return (
-        <div className='sm:block sm:p-4 md:grid grid-cols-3 gap-4 md:p-4 w-screen h-screen'>
+        <div className='sm: grid grid-cols-1 gap:4 w-3/4 m-auto p-4 sm:gap-4 md:grid md:grid-cols-3 gap-4 md:w-screen h-screen'>
             {subjectCard}
         </div>
     )
 }
 
 export default RatingSystem
+// sm:block sm:p-4 md:grid grid-cols-3 gap-4 md:p-4 w-1/2 md:w-screen h-screen
