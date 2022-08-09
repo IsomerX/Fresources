@@ -6,7 +6,10 @@ module.exports = {
     theme: {
         extend: {
             colors: {
+                bablu: '#020221',
                 primary: {
+                    bablu: '#101033',
+
                     black: '#0c0c0c',
                     white: '#ffffff',
                     pink: '#ff2bc1',

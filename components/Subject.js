@@ -33,7 +33,7 @@ function Subject() {
             {subjects[isActive].map((note, index) => {
                 return (
                     <div
-                        className='py-2 my-2 w-100 border shadow-sm'
+                        className='py-2 my-2 w-100 border shadow-sm mx-auto w-3/5'
                         key={note}
                     >
                         {note}
@@ -43,5 +43,6 @@ function Subject() {
         </>
     )
 }
+
 
 export default Subject

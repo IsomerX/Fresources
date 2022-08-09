@@ -1,11 +1,12 @@
 // import Head from 'next/head'
-import Subject from '../components/Subject'
+// import Subjecty from '../components/Subjecty'
 // import styles from '../styles/Home.module.css'
+import Subjecty from '../components/Subjecty'
 
 export default function Home() {
     return (
         <>
-            <Subject />
+            <Subjecty />
         </>
     )
 }
