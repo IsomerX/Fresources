@@ -8,7 +8,9 @@ export default function Home() {
         <>
             <Subject />
             <Link href={'/RatingSystem'}>
-                <button className='bg-blue-300 rounded-lg p-4'>To rating system</button>
+                <button className='bg-blue-300 rounded-lg p-4'>
+                    To rating system
+                </button>
             </Link>
         </>
     )
