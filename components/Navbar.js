@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Head from 'next/head'
 const Navbar = (props) => {
     const subjects =
-        ['Subject-1', 'Subject-2', 'Subject-3', 'subject-4', 'subject-5', 'subject-6']
+        ['Subject-1', 'Subject-2', 'Subject-3', 'subject-4', 'subject-5', 'subject-6', 'Subject-3', 'subject-4', 'subject-5', 'subject-6']
 
     const buttons = subjects.map((subject, index) => {
         return (
@@ -24,13 +24,13 @@ const Navbar = (props) => {
             </Head>
             <div className={`sidebar ${props.open} mx-auto`} >
                 <div className="logo-details" >
-                    <i className='bx bx-book-alt icon'></i>
+                    <i className='bx bx-book-bookmark icon'></i>
                     <div className="logo_name">Fresources</div>
                     <i className='bx bx-menu' id="btn" onClick={props.expand}></i>
                 </div>
                 <ul className="nav-list">
                     <li>
-                        <i className='bx bx-search' ></i>
+                        <i className='bx bx-search' onClick={props.expand} ></i>
                         <input type="text" placeholder="Search..." />
                         <span className="tooltip">Search</span>
                     </li>
@@ -41,7 +41,8 @@ const Navbar = (props) => {
                         </a>
                         <span className="tooltip">Home</span>
                     </li>
-                    {buttons}
+                    <div className='max-h-[400px] overflow-y-scroll'>
+                        {buttons}</div>
                     <li>
                         <a href="#">
                             <i className='bx bxl-whatsapp' ></i>
