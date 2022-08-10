@@ -17,9 +17,8 @@ const Navbar = (props) => {
 
         )
     })
-    return <div>
-        <>
-
+    return (
+        <div>
             <Head>
                 <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet' />
             </Head>
@@ -61,9 +60,8 @@ const Navbar = (props) => {
 
                 </ul>
             </div>
-
-        </>
-    </div >
+        </div >
+    )
 }
 
 export default Navbar
