@@ -31,43 +31,40 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                'poppins': 'Poppins'
+                poppins: 'Poppins',
             },
 
             colors: {
                 primary: {
-                    'pink': '#FBAFCC',
-                    'purple': '',
-                    'blue': '',
-                    'green': '#8AE3B7',
-                    'yellow': '',
+                    pink: '#FBAFCC',
+                    purple: '',
+                    blue: '',
+                    green: '#8AE3B7',
+                    yellow: '',
                 },
                 darkPrimary: {
-                    'pink': '',
-                    'purple': '',
-                    'blue': '',
-                    'green': ' #78C1C2',
-                    'yellow': '',
+                    pink: '',
+                    purple: '',
+                    blue: '',
+                    green: ' #78C1C2',
+                    yellow: '',
                 },
                 muted: {
-                    'pink': '',
-                    'purple': '',
-                    'blue': '',
-                    'green': '#AAE0C2',
-                    'yellow': '',
+                    pink: '',
+                    purple: '',
+                    blue: '',
+                    green: '#AAE0C2',
+                    yellow: '',
                 },
                 extraMuted: {
-                    'pink': '',
-                    'purple': '',
-                    'blue': '',
-                    'green': '#CAE8DA',
-                    'yellow': '',
+                    pink: '',
+                    purple: '',
+                    blue: '',
+                    green: '#CAE8DA',
+                    yellow: '',
                 },
-
             },
-
         },
     },
     plugins: [],
 }
-

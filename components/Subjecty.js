@@ -13,7 +13,6 @@ function Subject(props) {
 
     const [isActive, setIsActive] = useState('Notes')
 
-
     const buttons = Object.keys(subjects).map((subject, index) => {
         return (
             <button
@@ -26,17 +25,20 @@ function Subject(props) {
         )
     })
 
-
-
-
     return (
         <>
-
             <div
-                style={{ width: props.shift, marginLeft: props.margin, transition: 'all 0.5s ease' }} className="h-screen bg-babli items-center">
-
+                style={{
+                    width: props.shift,
+                    marginLeft: props.margin,
+                    transition: 'all 0.5s ease',
+                }}
+                className='h-screen bg-babli items-center'
+            >
                 <div className='mx-auto text-center pt-20 mb-5'>
-                    <p className='text-4xl pb-7 font-bold text-white'>Subject</p>
+                    <p className='text-4xl pb-7 font-bold text-white'>
+                        Subject
+                    </p>
                     {buttons}
                 </div>
 
@@ -55,6 +57,5 @@ function Subject(props) {
         </>
     )
 }
-
 
 export default Subject

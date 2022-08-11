@@ -13,7 +13,6 @@ function Subject() {
 
     const [isActive, setIsActive] = useState('Notes')
 
-
     const buttons = Object.keys(subjects).map((subject, index) => {
         return (
             <button
@@ -35,10 +34,9 @@ function Subject() {
                 // display: 'flex',
                 background: 'black',
                 width: '100%',
-                height: '100vh'
-
-            }}>
-
+                height: '100vh',
+            }}
+        >
             <div className='mx-auto text-center pt-20 mb-5'>
                 <p className='text-4xl pb-7 font-bold text-white'>Subject</p>
                 {buttons}
@@ -58,6 +56,5 @@ function Subject() {
         </div>
     )
 }
-
 
 export default Subject

@@ -21,16 +21,15 @@ a {
 @tailwind utilities;
 
 .shadow-primary-magenta {
-  box-shadow: 1.2rem 1.2rem #a03a8a;
+    box-shadow: 1.2rem 1.2rem #a03a8a;
 }
 .shadow-offset-magenta {
-  box-shadow: 4px 4px #400434;
+    box-shadow: 4px 4px #400434;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-
