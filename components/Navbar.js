@@ -41,7 +41,7 @@ const Navbar = (props) => {
                         </a>
                         <span className="tooltip">Home</span>
                     </li>
-                    <div className='max-h-[400px] overflow-y-scroll'>
+                    <div className='max-h-[400px] overflow-y-scroll '>
                         {buttons}</div>
                     <li>
                         <a href="#">
