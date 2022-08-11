@@ -32,38 +32,25 @@ module.exports = {
         extend: {
             fontFamily: {
                 poppins: 'Poppins',
+                inter: 'Inter',
             },
-
             colors: {
                 primary: {
-                    pink: '#FBAFCC',
-                    purple: '',
-                    blue: '',
-                    green: '#8AE3B7',
-                    yellow: '',
-                },
-                darkPrimary: {
-                    pink: '',
-                    purple: '',
-                    blue: '',
-                    green: ' #78C1C2',
-                    yellow: '',
+                    'blue': '#020317',
+                    'red': '#923535',
+                    'green': '#05FF00',
+                    'violet': '#522AA6',
                 },
                 muted: {
-                    pink: '',
-                    purple: '',
-                    blue: '',
-                    green: '#AAE0C2',
-                    yellow: '',
-                },
-                extraMuted: {
-                    pink: '',
-                    purple: '',
-                    blue: '',
-                    green: '#CAE8DA',
-                    yellow: '',
-                },
+                    'green': '#012900',
+                }
             },
+            backgroundImage: {
+                'gradient-radial': 'radial-gradient(var(--gradient-color-stops))',
+            },
+            boxShadow: {
+                'glass': '0 1px 3px 0 rgb(0 0 0 / 0.05);',
+            }
         },
     },
     plugins: [],
