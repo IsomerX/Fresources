@@ -36,21 +36,22 @@ module.exports = {
             },
             colors: {
                 primary: {
-                    'blue': '#020317',
-                    'red': '#923535',
-                    'green': '#05FF00',
-                    'violet': '#522AA6',
+                    blue: '#020317',
+                    red: '#923535',
+                    green: '#05FF00',
+                    violet: '#522AA6',
                 },
                 muted: {
-                    'green': '#012900',
-                }
+                    green: '#012900',
+                },
             },
             backgroundImage: {
-                'gradient-radial': 'radial-gradient(var(--gradient-color-stops))',
+                'gradient-radial':
+                    'radial-gradient(var(--gradient-color-stops))',
             },
             boxShadow: {
-                'glass': '0 1px 3px 0 rgb(0 0 0 / 0.05);',
-            }
+                glass: '0 1px 3px 0 rgb(0 0 0 / 0.05);',
+            },
         },
     },
     plugins: [],

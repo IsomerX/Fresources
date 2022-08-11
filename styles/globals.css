@@ -37,7 +37,11 @@ a {
 }
 
 .glass-gradient-1 {
-  background-image: radial-gradient( rgb(2, 3, 23, 0.5), rgb(2, 3, 23, 0.5),  rgba(255, 255, 255, 0.15));
+    background-image: radial-gradient(
+        rgb(2, 3, 23, 0.5),
+        rgb(2, 3, 23, 0.5),
+        rgba(255, 255, 255, 0.15)
+    );
 }
 
 * {
