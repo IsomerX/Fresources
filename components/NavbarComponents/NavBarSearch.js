@@ -31,7 +31,7 @@ const NavBarSearch = () => {
                     <input
                         type='search'
                         id='default-search'
-                        className='block p-4 pl-10 w-full text-sm text-gray-900 bg-white rounded-lg border-t-2 border-r-4 border-b-4 border-l-2 border-black focus:border-t-2 focus:border-r-4 focus:border-b-4 focus:border-l-2 focus:border-black'
+                        className='block p-4 pl-10 w-full text-sm text-gray-900 bg-white rounded-lg border-type-1'
                         placeholder='Search for a topic'
                         required=''
                     ></input>

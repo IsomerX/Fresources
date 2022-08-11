@@ -18,6 +18,14 @@ a {
 
 @tailwind base;
 @tailwind components;
+
+  .border-type-1 {
+    @apply border-t-2 border-r-4 border-b-4 border-l-2 border-black focus:border-t-2 focus:border-r-4 focus:border-b-4 focus:border-l-2 focus:border-black
+  }
+
+  .border-type-2{
+    @apply border-t border-r-2 border-b-2 border-l border-black
+  }
 @tailwind utilities;
 
 .shadow-primary-magenta {

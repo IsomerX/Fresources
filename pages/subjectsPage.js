@@ -1,17 +1,29 @@
 import React, { useState } from 'react'
 import Navbar from '../components/NavbarComponents/Navbar'
-import { topicsJSON } from '../dataset'
-// import './styles.css';
+import { subjectsArray, topicsJSON } from '../dataset'
 
 function SubjectPage(props) {
     const [isActive, setIsActive] = useState('Notes')
+    const [navbarShow, setNavbarShow] = useState(true)
     const topics = topicsJSON
+    const subjects = subjectsArray
 
-    const buttons = Object.keys(topics).map((topic, index) => {
+    const topicHeaders = Object.keys(topics).map((topic, index) => {
         return (
             <button
                 onClick={() => setIsActive(topic)}
-                className='btn mx-8 text-2xl text-neutral-500	 hover:text-gray-600   focus:text-white mb-2'
+                className='transition ease-in-out delay-100 bg-orange-400 py-4 px-10 rounded-lg border-2 border-black font-poppins font-semibold text-xl hover:bg-[#a197e4] hover:-translate-y-1 hover:scale-110 duration-300 text-center'
+                key={topic}
+            >
+                {topic}
+            </button>
+        )
+    })
+
+    const topicDisplay = topics[isActive].map((topic, index) => {
+        return (
+            <button
+                className='px-10 py-4 text-center bg-primary-green rounded-lg border-type-2'
                 key={topic}
             >
                 {topic}
@@ -20,23 +32,17 @@ function SubjectPage(props) {
     })
 
     return (
-        <div className='grid grid-cols-8 bg-[#f17bd7] w-screen h-screen gap-16'>
-            <div className='col-span-2 '>
-                <Navbar />
+        <div className='grid grid-cols-8 bg-[#f17bd7] w-screen h-screen gap-12 overflow-hidden p-4'>
+            <div className={
+                navbarShow ? 'col-span-2 ' : 'col-span-1'} >
+                <Navbar proppedSubjects={subjects} setNavbarShow={setNavbarShow} />
             </div>
-            <div className='col-span-4 py-4'>
-                <div>{buttons}</div>
-                <div>
-                    {topics[isActive].map((topic, index) => {
-                        return (
-                            <div
-                                className='py-5 my-3 rounded-lg  text-white border  drop-shadow-lg mx-auto max-w-screen-sm	 text-center text-2xl  bg-blue-900  hover:bg-bablu cursor-pointer '
-                                key={topic}
-                            >
-                                {topic}
-                            </div>
-                        )
-                    })}
+            <div className='col-span-4 p-4 bg-white h-5/6 rounded flex flex-col items-center border-2 border-black shadow-primary-magenta'>
+                <div className='grid grid-cols-3 gap-4 text-center'>
+                    {topicHeaders}
+                </div>
+                <div className='py-4'>
+                    {topicDisplay}
                 </div>
             </div>
             <div className='col-span-2'>

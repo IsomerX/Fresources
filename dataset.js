@@ -8,3 +8,12 @@ export const topicsJSON = {
     Experiments: ['exp-1', 'exp-2'],
     Playlist: ['play-1', 'play-2'],
 }
+
+export const subjectsArray = [
+    'Subject-1',
+    'Subject-2',
+    'Subject-3',
+    'subject-4',
+    'subject-5',
+    'subject-6',
+]
