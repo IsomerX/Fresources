@@ -11,7 +11,6 @@ const Navbar = (props) => {
         'subject-6',
     ]
 
-
     return (
         <div className='h-full bg-white flex flex-col gap-6 p-4'>
             <Head>

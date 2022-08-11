@@ -9,7 +9,7 @@ const index = () => {
     const collageButtons = collagesArray.map((collage) => {
         return (
             <div key={collage} className=''>
-                <Link href="./subjectsPage">
+                <Link href='./subjectsPage'>
                     <button className='transition ease-in-out delay-100 bg-[#d745b8] shadow-offset-magenta py-4 px-10 rounded-lg border-2 border-black font-poppins font-semibold text-xl text-white hover:bg-[#a197e4] hover:-translate-y-1 hover:scale-110 duration-300'>
                         {collage}
                     </button>
@@ -22,9 +22,7 @@ const index = () => {
             <div className='col-span-1'></div>
             <div className='col-span-2 flex flex-col justify-around gap-2'>
                 <div className='h-1/2 bg-white rounded-2xl border-2 border-black shadow-primary-magenta grid grid-flow-col'>
-                    <div>
-                        {/* <img src='../public/samples/1.png'></img> */}
-                    </div>
+                    <div>{/* <img src='../public/samples/1.png'></img> */}</div>
                     <div className='col-span-2 text-center font-poppins font-bold flex flex-col justify-center gap-4'>
                         <div className='text-5xl'>
                             <span className='text-[#4fb2aa] font-bold'>F</span>

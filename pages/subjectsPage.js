@@ -3,9 +3,9 @@ import Navbar from '../components/NavbarComponents/Navbar'
 import { topicsJSON } from '../dataset'
 // import './styles.css';
 
-function subjectPage(props) {
-    const topics = topicsJSON
+function SubjectPage(props) {
     const [isActive, setIsActive] = useState('Notes')
+    const topics = topicsJSON
 
     const buttons = Object.keys(topics).map((topic, index) => {
         return (
@@ -25,13 +25,12 @@ function subjectPage(props) {
                 <Navbar />
             </div>
             <div className='col-span-4 py-4'>
-                <div>
-                    {buttons}
-                </div>
+                <div>{buttons}</div>
                 <div>
                     {topics[isActive].map((topic, index) => {
                         return (
-                            <div className='py-5 my-3 rounded-lg  text-white border  drop-shadow-lg mx-auto max-w-screen-sm	 text-center text-2xl  bg-blue-900  hover:bg-bablu cursor-pointer '
+                            <div
+                                className='py-5 my-3 rounded-lg  text-white border  drop-shadow-lg mx-auto max-w-screen-sm	 text-center text-2xl  bg-blue-900  hover:bg-bablu cursor-pointer '
                                 key={topic}
                             >
                                 {topic}
@@ -43,9 +42,8 @@ function subjectPage(props) {
             <div className='col-span-2'>
                 <div></div>
             </div>
-
         </div>
     )
 }
 
-export default subjectPage
+export default SubjectPage
