@@ -29,13 +29,27 @@ const Navbar = (props) => {
                 />
             </Head>
             <div className='flex justify-between'>
-                <div className={
-                    navbarActive ? 'block' : 'hidden'} >
+                <div className={navbarActive ? 'block' : 'hidden'}>
                     <div>logo</div>
                     <button>Freesources</button>
                 </div>
-                <button className='bg-white border-type-1 w-12 rounded-lg px-2 pr-1' onClick={toggleNavbarHandler}>
-                    <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
+                <button
+                    className='bg-white border-type-1 w-12 rounded-lg px-2 pr-1'
+                    onClick={toggleNavbarHandler}
+                >
+                    <svg
+                        className='w-6 h-6'
+                        aria-hidden='true'
+                        fill='currentColor'
+                        viewBox='0 0 20 20'
+                        xmlns='http://www.w3.org/2000/svg'
+                    >
+                        <path
+                            fillRule='evenodd'
+                            d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z'
+                            clipRule='evenodd'
+                        ></path>
+                    </svg>
                 </button>
             </div>
             <NavBarSearch className={navbarActive ? 'block' : 'hidden'} />

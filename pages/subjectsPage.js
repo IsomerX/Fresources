@@ -33,17 +33,17 @@ function SubjectPage(props) {
 
     return (
         <div className='grid grid-cols-8 bg-[#f17bd7] w-screen h-screen gap-12 overflow-hidden p-4'>
-            <div className={
-                navbarShow ? 'col-span-2 ' : 'col-span-1'} >
-                <Navbar proppedSubjects={subjects} setNavbarShow={setNavbarShow} />
+            <div className={navbarShow ? 'col-span-2 ' : 'col-span-1'}>
+                <Navbar
+                    proppedSubjects={subjects}
+                    setNavbarShow={setNavbarShow}
+                />
             </div>
             <div className='col-span-4 p-4 bg-white h-5/6 rounded flex flex-col items-center border-2 border-black shadow-primary-magenta'>
                 <div className='grid grid-cols-3 gap-4 text-center'>
                     {topicHeaders}
                 </div>
-                <div className='py-4'>
-                    {topicDisplay}
-                </div>
+                <div className='py-4'>{topicDisplay}</div>
             </div>
             <div className='col-span-2'>
                 <div></div>
