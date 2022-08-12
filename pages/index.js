@@ -27,13 +27,13 @@ const Index = () => {
                 <GlassSearch />
             </div>
             <div className='w-full flex flex-col items-center gap-16 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
-                <div className='text-8xl font-bold'>
+                <div className='text-7xl font-bold md:text-8xl'>
                     <h1 className='text-white'>FRESOURCES</h1>
                     <h1 className='-mt-4 -rotate-180 bg-clip-text text-transparent bg-gradient-to-t from-white opacity-30'>
                         FRESOURCES
                     </h1>
                 </div>
-                <div className='grid w-1/2 grid-cols-4 gap-10 cursor-pointer'>
+                <div className='cursor-pointer grid w-3/4 grid-cols-2 gap-4 md:grid md:w-full md:p-8 lg:w-2/3 md:grid-cols-4 md:gap-10 text-center '>
                     {collegeButtons}
                 </div>
             </div>
