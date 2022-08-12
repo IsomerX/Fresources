@@ -42,8 +42,8 @@ module.exports = {
                     violet: '#522AA6',
                 },
                 muted: {
-                    'green': '#012900',
-                    'gray': 'rgba(255, 255, 255, 0.15)',
+                    green: '#012900',
+                    gray: 'rgba(255, 255, 255, 0.15)',
                 },
             },
             backgroundImage: {

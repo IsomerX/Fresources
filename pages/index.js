@@ -30,9 +30,7 @@ const index = () => {
                     </h1>
                 </div>
             </div>
-            <div className='flex gap-10 cursor-pointer'>
-                {collageButtons}
-            </div>
+            <div className='flex gap-10 cursor-pointer'>{collageButtons}</div>
             <div className='relative h-screen w-screen'>
                 <div className='h-[24rem] w-[24rem] rounded-full bg-primary-red absolute -left-20 bottom-4 blur-2xl opacity-60' />
                 <div className='h-80 w-80 rounded-full bg-primary-green absolute right-16 blur-2xl' />

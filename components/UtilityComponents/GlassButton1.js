@@ -10,4 +10,4 @@ const GlassButton1 = (props) => {
     )
 }
 
-export default GlassButton1 
+export default GlassButton1

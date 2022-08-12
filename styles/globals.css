@@ -45,9 +45,12 @@ a {
 }
 
 .glass-gradient-2 {
-    background-image: linear-gradient( rgba(2,3,23,0.9) 0%, rgba(2,3,23,9) 50%, rgba(2,3,23,1) 100%);
+    background-image: linear-gradient(
+        rgba(2, 3, 23, 0.9) 0%,
+        rgba(2, 3, 23, 9) 50%,
+        rgba(2, 3, 23, 1) 100%
+    );
 }
-
 
 * {
     margin: 0;
