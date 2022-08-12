@@ -38,11 +38,12 @@ module.exports = {
                 primary: {
                     blue: '#020317',
                     red: '#923535',
-                    green: '#05FF00',
+                    green: '#033512',
                     violet: '#522AA6',
                 },
                 muted: {
-                    green: '#012900',
+                    'green': '#012900',
+                    'gray': 'rgba(255, 255, 255, 0.15)',
                 },
             },
             backgroundImage: {
