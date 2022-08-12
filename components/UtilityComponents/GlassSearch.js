@@ -2,7 +2,7 @@ import React from 'react'
 
 const GlassSearch = () => {
     return (
-        <div className='w-full block p-4 rounded-lg font-bold text-2xl glass-gradient-1 shadow-glass shadow-[rgba(255,255,255,0.50)]'>
+        <div className='w-full block p-4 rounded-xl font-bold text-2xl glass-gradient-1 shadow-glass shadow-[rgba(255,255,255,0.50)]'>
             <form>
                 <label
                     htmlFor='default-search'

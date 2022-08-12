@@ -1,40 +1,43 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import BlurBall from '../components/UtilityComponents/BlurBall'
 import GlassButton1 from '../components/UtilityComponents/GlassButton1'
 import GlassSearch from '../components/UtilityComponents/GlassSearch'
 import { collages } from '../dataset'
 
 const index = () => {
+    const [isTrue, setIsTrue] = useState('home')
     const collagesArray = collages
 
-    const collageButtons = collagesArray.map((collage) => {
+    const changeRouteHandler = () => {
+        setIsTrue(true)
+    }
+
+    const collageButtons = collagesArray.map((college) => {
         return (
-            <div key={collage} className=''>
-                <Link href='./subjectsPage'>
-                    <GlassButton1 textContent={collage} />
-                </Link>
+            <div key={college}>
+                <GlassButton1 textContent={college} target={'./subjectsPage'} />
             </div>
         )
     })
     return (
-        <div className='w-screen h-screen p-4 pt-8 flex flex-col gap-16 items-center font-inter text-white overflow-hidden bg-gradient-to-b glass-gradient-2'>
+        <div className='w-screen h-screen p-4 pt-8 flex flex-col gap-16  items-center font-inter text-white overflow-hidden bg-gradient-to-b glass-gradient-2'>
             <div className='w-1/2'>
                 <GlassSearch />
             </div>
             <div>
-                <div className='text-7xl font-bold'>
-                    <h1 className='text-white'>FREESOURCES</h1>
+                <div className='text-7xl font-bold mt-10'>
+                    <h1 className='text-white'>FRESOURCES</h1>
                     <h1 className=' -mt-4 -rotate-180 bg-clip-text text-transparent bg-gradient-to-t from-white opacity-30'>
-                        FREESOURCES
+                        FRESOURCES
                     </h1>
                 </div>
             </div>
             <div className='flex gap-10 cursor-pointer'>{collageButtons}</div>
             <div className='relative h-screen w-screen'>
-                <div className='h-[24rem] w-[24rem] rounded-full bg-primary-red absolute -left-20 bottom-4 blur-2xl opacity-60' />
-                <div className='h-80 w-80 rounded-full bg-primary-green absolute right-16 blur-2xl' />
-                <div className='h-80 w-80 rounded-full bg-primary-violet absolute right-10 bottom-64 blur-2xl opacity-40' />
+                <div className='h-[24rem] w-[24rem] rounded-full bg-primary-red absolute -left-20 bottom-4 blur-5xl opacity-30' />
+                <div className='h-80 w-80 rounded-full bg-primary-green absolute right-16 blur-3xl opacity-80' />
+                <div className='h-80 w-80 rounded-full bg-primary-violet absolute right-10 bottom-64 blur-5xl opacity-30' />
             </div>
         </div>
     )
