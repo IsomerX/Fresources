@@ -2,7 +2,7 @@ import React from 'react'
 
 const GlassSearch = () => {
     return (
-        <div className='w-full block p-4 rounded-xl font-bold text-2xl glass-gradient-1 shadow-glass shadow-[rgba(255,255,255,0.50)]'>
+        <div className='w-full block p-4 rounded-xl font-bold text-2xl search-glass shadow-glass shadow-[rgba(255,255,255,0.50)] z-10 relative'>
             <form>
                 <label
                     htmlFor='default-search'
@@ -14,7 +14,7 @@ const GlassSearch = () => {
                     <div className='flex absolute inset-y-0 left-0 items-center pl-2 pointer-events-none'>
                         <svg
                             aria-hidden='true'
-                            className='w-5 h-5'
+                            className='w-6 h-6 text-gray-500'
                             fill='none'
                             stroke='currentColor'
                             viewBox='0 0 24 24'

@@ -54,7 +54,7 @@ module.exports = {
                     'radial-gradient(var(--gradient-color-stops))',
             },
             boxShadow: {
-                glass: '0 1px 3px 0 rgb(0 0 0 / 0.05);',
+                'glass': '0 1px 3px 0 rgb(0 0 0 / 0.05);',
                 'glass-2': '0 1px 5px 0 rgb(0 0 0 / 0.05);',
             },
             blur: {

@@ -1,4 +1,4 @@
-export const collages = ['NSUT', 'DTU', 'IGDTU', 'IIIT D']
+export const colleges = ['NSUT', 'DTU', 'IGDTU', 'IIIT D']
 
 export const topicsJSON = {
     Notes: ['notes-1', 'notes-2'],
