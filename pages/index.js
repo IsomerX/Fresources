@@ -1,6 +1,4 @@
-import Link from 'next/link'
-import React, { useState } from 'react'
-import BlurBall from '../components/UtilityComponents/BlurBall'
+import React from 'react'
 import GlassButton1 from '../components/UtilityComponents/GlassButton1'
 import GlassSearch from '../components/UtilityComponents/GlassSearch'
 import { colleges } from '../dataset'
