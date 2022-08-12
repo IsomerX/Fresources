@@ -6,12 +6,6 @@ import GlassSearch from '../components/UtilityComponents/GlassSearch'
 import { colleges } from '../dataset'
 
 const Index = () => {
-    const [isTrue, setIsTrue] = useState('home')
-
-    const changeRouteHandler = () => {
-        setIsTrue(true)
-    }
-
     const collegeButtons = colleges.map((college) => {
         return (
             <GlassButton1
@@ -22,7 +16,7 @@ const Index = () => {
         )
     })
     return (
-        <div className='w-screen h-screen p-4 pt-8 flex flex-col gap-16  items-center font-inter text-white overflow-hidden'>
+        <div className='w-screen h-screen p-4 pt-8 flex flex-col gap-16 items-center font-inter text-white overflow-hidden'>
             <div className='w-8/12'>
                 <GlassSearch />
             </div>
