@@ -5,7 +5,7 @@ import GlassButton1 from '../components/UtilityComponents/GlassButton1'
 import GlassSearch from '../components/UtilityComponents/GlassSearch'
 import { collages } from '../dataset'
 
-const index = () => {
+const Index = () => {
     const [isTrue, setIsTrue] = useState('home')
     const collagesArray = collages
 
@@ -43,6 +43,6 @@ const index = () => {
     )
 }
 
-export default index
+export default Index
 // hover:bg-[#a197e4] hover:-translate-y-1 hover:scale-110 duration-300
 // bg-gradient-to-b from-muted-gray via-primary-blue to-primary-blue

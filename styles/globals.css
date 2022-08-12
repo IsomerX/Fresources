@@ -53,9 +53,9 @@ a {
 }
 
 .glass {
-    -moz-box-shadow:    inset 0 0 16.17px rgba(165,165,165,0.11);
-   -webkit-box-shadow: inset 0 0 16.17px rgba(165,165,165,0.11);
-   box-shadow:         inset 0 0 16.17px rgba(165,165,165,0.11);
+    -moz-box-shadow: inset 0 0 16.17px rgba(165, 165, 165, 0.11);
+    -webkit-box-shadow: inset 0 0 16.17px rgba(165, 165, 165, 0.11);
+    box-shadow: inset 0 0 16.17px rgba(165, 165, 165, 0.11);
 }
 
 * {
